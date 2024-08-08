@@ -103,8 +103,6 @@ pub fn onStartCocoonStage(session: *Session, packet: *const Packet, allocator: A
     }
 
     // PF/AS scoring
-    //const BattleTargetInfo = protocol.SceneBattleInfo.BattleTargetInfo;
-    //battle.battle_target_info = ArrayList(BattleTargetInfo).init(allocator);s
     const BattleTargetInfo = protocol.SceneBattleInfo.BattleTargetInfo;
     battle.battle_target_info = ArrayList(BattleTargetInfo).init(allocator);
 

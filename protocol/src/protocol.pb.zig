@@ -32596,7 +32596,7 @@ pub const HDACIKPCKNF = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const DNGIKKGLNIE = struct {
+pub const DNGIKKGLNIE = struct { //GetSceneMapInfoCsReq
     NFCOJIGIFBB: u32 = 0,
     CJKOIJLAHHO: u32 = 0,
     EDPALJJJGKI: bool = false,
@@ -32670,7 +32670,7 @@ pub const MDPNLIODAPD = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const KBPKFJBEILJ = struct {
+pub const SceneMapInfo = struct {
     CBPHPHOPOFK: ArrayList(CBPHPHOPOFKEntry),
     unlock_teleport_list: ArrayList(u32),
     EAEOIONFEHM: ArrayList(KDDOBJMFAHM),
@@ -32716,9 +32716,9 @@ pub const KBPKFJBEILJ = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const ANJOFNKHLFP = struct {
+pub const ANJOFNKHLFP = struct { //GetSceneMapInfoScRsp
     EDPALJJJGKI: bool = false,
-    MDFPLNOLJNF: ArrayList(KBPKFJBEILJ),
+    MDFPLNOLJNF: ArrayList(SceneMapInfo),
     retcode: u32 = 0,
 
     pub const _desc_table = .{

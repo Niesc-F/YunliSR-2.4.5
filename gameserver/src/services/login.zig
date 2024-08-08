@@ -21,6 +21,7 @@ pub fn onPlayerLogin(session: *Session, packet: *const Packet, allocator: Alloca
     basic_info.stamina = 240;
     basic_info.level = 5;
     basic_info.nickname = .{ .Const = "ArkLight" };
+    basic_info.world_level = 6;
 
     var rsp = protocol.PlayerLoginScRsp.init(allocator);
     rsp.retcode = 0;

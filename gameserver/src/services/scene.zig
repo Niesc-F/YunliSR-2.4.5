@@ -10,25 +10,26 @@ const log = std.log.scoped(.scene_service);
 pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocator) !void {
     var scene_info = protocol.SceneInfo.init(allocator);
     scene_info.game_mode_type = 2;
-    scene_info.plane_id = 20242;
-    scene_info.floor_id = 20242001;
-    scene_info.entry_id = 2024201;
+    scene_info.plane_id = 20313;
+    scene_info.floor_id = 20313001;
+    scene_info.entry_id = 2031301;
 
         { // Character
         var scene_group = protocol.SceneGroupInfo.init(allocator);
         scene_group.state = 1;
 
         try scene_group.entity_list.append(.{
-            .entity_id = 0,
-            .group_id = 0,
-            .inst_id = 0,
+            //unused
+            //.entity_id = 0,
+            //.group_id = 0,
+            //.inst_id = 0,
             .actor = .{
                 .base_avatar_id = 1221,
                 .avatar_type = .AVATAR_FORMAL_TYPE,
-                .uid = 1337,
+                .uid = 666,
                 .map_layer = 2,
             },
-            .motion = .{ .pos = .{ .x = 1, .y = 1, .z = 1 }, .rot = .{} },
+            .motion = .{ .pos = .{ .x = 32342, .y = 192820, .z = 434276 }, .rot = .{} },
         });
 
         try scene_info.scene_group_list.append(scene_group);
@@ -36,19 +37,19 @@ pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocat
 
     { // Calyx prop
         var scene_group = protocol.SceneGroupInfo.init(allocator);
-        scene_group.state = 0;
-        scene_group.group_id = 199;
+        scene_group.state = 1;
+        scene_group.group_id = 186;
 
         var prop = protocol.ScenePropInfo.init(allocator);
-        prop.prop_id = 113;
+        prop.prop_id = 808;
         prop.prop_state = 1;
 
         try scene_group.entity_list.append(.{
-            .group_id = 199,
+            .group_id = 186,
             .inst_id = 300001,
-            .entity_id = 80,
+            .entity_id = 328,
             .prop = prop,
-            .motion = .{ .pos = .{ .x = 100, .y = 1, .z = 1 }, .rot = .{} },
+            .motion = .{ .pos = .{ .x = 31440, .y = 192820, .z = 433790 }, .rot = .{} },
         });
 
         try scene_info.scene_group_list.append(scene_group);

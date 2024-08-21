@@ -63,7 +63,6 @@ const DummyCmdList = [_]struct { CmdID, CmdID }{
     .{ CmdID.CmdGetVideoVersionKeyCsReq, CmdID.CmdGetVideoVersionKeyScRsp },
     .{ CmdID.CmdGetCurBattleInfoCsReq, CmdID.CmdGetCurBattleInfoScRsp },
     .{ CmdID.CmdHeliobusActivityDataCsReq, CmdID.CmdHeliobusActivityDataScRsp },
-    .{ CmdID.CmdGetEnteredSceneCsReq, CmdID.CmdGetEnteredSceneScRsp },
     .{ CmdID.CmdGetAetherDivideInfoCsReq, CmdID.CmdGetAetherDivideInfoScRsp },
     .{ CmdID.CmdGetMapRotationDataCsReq, CmdID.CmdGetMapRotationDataScRsp },
     .{ CmdID.CmdGetRogueCollectionCsReq, CmdID.CmdGetRogueCollectionScRsp },

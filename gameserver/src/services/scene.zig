@@ -25,13 +25,13 @@ pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocat
             //.group_id = 0,
             //.inst_id = 0,
             .actor = .{
-                .base_avatar_id = 1221,
+                .base_avatar_id = 1314,
                 .avatar_type = .AVATAR_FORMAL_TYPE,
                 .uid = 666,
                 .map_layer = 2,
             },
             //.motion = .{ .pos = .{ .x = 32342, .y = 192820, .z = 434276 }, .rot = .{} },
-            .motion = .{ .pos = .{ .x = 193953, .y = 75856, .z = 2267 }, .rot = .{} },
+            .motion = .{ .pos = .{ .x = 75856, .y = 2267, .z = 193953 }, .rot = .{} },
         });
 
         try scene_info.scene_group_list.append(scene_group);
@@ -44,7 +44,7 @@ pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocat
 
         var prop = protocol.ScenePropInfo.init(allocator);
         prop.prop_id = 808;
-        prop.prop_state = 1;
+        prop.prop_state = 26;
 
         try scene_group.entity_list.append(.{
             .group_id = 26,
@@ -52,7 +52,7 @@ pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocat
             .entity_id = 1337,
             .prop = prop,
             //.motion = .{ .pos = .{ .x = 31440, .y = 192820, .z = 433790 }, .rot = .{} },
-            .motion = .{ .pos = .{ .x = 193903, .y = 75806, .z = 2267 }, .rot = .{} },
+            .motion = .{ .pos = .{ .x = 75806, .y = 2267, .z = 193903 }, .rot = .{} },
         });
 
         try scene_info.scene_group_list.append(scene_group);

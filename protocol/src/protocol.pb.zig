@@ -6620,9 +6620,9 @@ pub const FGMGMPEMFOA = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const LIJPGEADOHH = struct {
+pub const LIJPGEADOHH = struct { //ActivityScheduleInfo
     end_time: i64 = 0,
-    FJLNNCJAHNG: u32 = 0,
+    FJLNNCJAHNG: u32 = 0, //activity_id
     PAFPCPMIKIN: u32 = 0,
     begin_time: i64 = 0,
 
@@ -8195,7 +8195,7 @@ pub const AECNOMADCJH = struct {
 };
 
 pub const LPNOMFFFPDC = struct {
-    HDOLEPOOEFA: ArrayList(PileItem),
+    HDOLEPOOEFA: ArrayList(PileItem), //return_item_list
     retcode: u32 = 0,
 
     pub const _desc_table = .{
@@ -8236,7 +8236,7 @@ pub const LOKKKOEGCEL = struct {
 
 pub const PGALLHINMCG = struct {
     base_avatar_id: u32 = 0,
-    PDPFCFGLGCO: ArrayList(ItemCost),
+    PDPFCFGLGCO: ArrayList(ItemCost), //item_cost_list
 
     pub const _desc_table = .{
         .base_avatar_id = fd(1, .{ .Varint = .Simple }),
@@ -9884,7 +9884,7 @@ pub const SendMsgScRsp = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const FDOLECGMPNP = struct {
+pub const FDOLECGMPNP = struct { //?Chat
     EHJDLPPNGMF: u32 = 0,
     GPCNECEDGOF: ?KICJPJALBBH = null,
     EKOMGPKNMNN: ManagedString = .Empty,
@@ -12510,9 +12510,9 @@ pub const Vector = struct {
     x: i32 = 0,
 
     pub const _desc_table = .{
-        .y = fd(14, .{ .Varint = .Simple }),
-        .z = fd(5, .{ .Varint = .Simple }),
-        .x = fd(3, .{ .Varint = .Simple }),
+        .y = fd(5, .{ .Varint = .Simple }), //x
+        .z = fd(3, .{ .Varint = .Simple }), //y
+        .x = fd(14, .{ .Varint = .Simple }), //z
     };
 
     pub usingnamespace protobuf.MessageMixins(@This());
@@ -15148,7 +15148,7 @@ pub const GetFriendListInfoScRsp = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const DNPOAIMLOLE = struct {
+pub const DNPOAIMLOLE = struct { //?DeleteFriendCsReq
     uid: u32 = 0,
 
     pub const _desc_table = .{
@@ -23380,7 +23380,7 @@ pub const UnlockAvatarPathScRsp = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const GNOMMGHHGIK = struct {
+pub const GNOMMGHHGIK = struct { //AvatarPathChangedNotify
     base_avatar_id: u32 = 0,
     NBBOMJGHPPD: MultiPathAvatarType = @enumFromInt(0),
 
@@ -23934,7 +23934,7 @@ pub const ILMPDOLBFLP = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const JIOIFOJMHGG = struct {
+pub const JIOIFOJMHGG = struct { //DisplayAvatar
     pos: u32 = 0,
     avatar_id: u32 = 0,
 
@@ -23946,7 +23946,7 @@ pub const JIOIFOJMHGG = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const ACIGHDHODOL = struct {
+pub const ACIGHDHODOL = struct { //DisplayAvatarVec
     EBIEBIPEMMP: bool = false,
     HOANNLKCMOJ: ArrayList(JIOIFOJMHGG),
 
@@ -29814,7 +29814,7 @@ pub const CJECHCDMOBB = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const HNKLHFGNIDH = struct {
+pub const HNKLHFGNIDH = struct { //GetSceneMapInfoCsReq
     ADNPLKIBHOG: u32 = 0,
     MECJMCHKNDE: bool = false,
     JLGJDBMHNAN: u32 = 0,
@@ -31996,7 +31996,7 @@ pub const DMHFNLKMMNF = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const FPJKMMKPNGE = struct {
+pub const GetCurSceneInfoCsReq = struct {
     pub const _desc_table = .{};
 
     pub usingnamespace protobuf.MessageMixins(@This());
@@ -32238,7 +32238,7 @@ pub const ICAEIAKDFCM = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const ECFNFIMFJGH = struct {
+pub const ECFNFIMFJGH = struct { //DeactivateFarmElementCsReq
     entity_id: u32 = 0,
 
     pub const _desc_table = .{
@@ -32248,7 +32248,7 @@ pub const ECFNFIMFJGH = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const OEIIBHDGKCM = struct {
+pub const OEIIBHDGKCM = struct { //DeactivateFarmElementScRsp
     entity_id: u32 = 0,
     retcode: u32 = 0,
 
@@ -32260,7 +32260,7 @@ pub const OEIIBHDGKCM = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const EDHFOKFJIFM = struct {
+pub const EDHFOKFJIFM = struct { //ActivateFarmElementCsReq
     entity_id: u32 = 0,
     world_level: u32 = 0,
 
@@ -32272,7 +32272,7 @@ pub const EDHFOKFJIFM = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const KBBJOKLPDGF = struct {
+pub const KBBJOKLPDGF = struct {  //ActivateFarmElementScRsp
     entity_id: u32 = 0,
     retcode: u32 = 0,
     world_level: u32 = 0,
@@ -32596,7 +32596,7 @@ pub const HDACIKPCKNF = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const DNGIKKGLNIE = struct { //GetSceneMapInfoCsReq
+pub const DNGIKKGLNIE = struct {
     NFCOJIGIFBB: u32 = 0,
     CJKOIJLAHHO: u32 = 0,
     EDPALJJJGKI: bool = false,

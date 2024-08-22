@@ -17972,7 +17972,7 @@ pub const ReplaceLineupCsReq = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const AHBJHKINBIL = struct {
+pub const ReplaceLineupScRsp = struct {
     retcode: u32 = 0,
 
     pub const _desc_table = .{
@@ -31866,7 +31866,7 @@ pub const FNMHAAJAAEK = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const BKPJAPJEJHP = struct {
+pub const SceneCastSkillCsReq = struct { //BKPJAPJEJHP
     GGOGCCBGOFO: ManagedString = .Empty,
     JNPBPMKHOAM: ArrayList(SceneCastSkillType),
     EGOFDBHNPLE: u32 = 0,
@@ -31896,7 +31896,7 @@ pub const BKPJAPJEJHP = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const ILIOGCGPCBF = struct {
+pub const SceneCastSkillScRsp = struct { //ILIOGCGPCBF
     BJLBGFEJGFA: ArrayList(KNCJHGLKLBI),
     GBHFFCBGJOC: u32 = 0,
     retcode: u32 = 0,
@@ -31912,7 +31912,7 @@ pub const ILIOGCGPCBF = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const NJBACJFLLBK = struct {
+pub const SceneCastSkillCostMpCsReq = struct {
     EGOFDBHNPLE: u32 = 0,
     GBHFFCBGJOC: u32 = 0,
     skill_index: u32 = 0,
@@ -31926,7 +31926,7 @@ pub const NJBACJFLLBK = struct {
     pub usingnamespace protobuf.MessageMixins(@This());
 };
 
-pub const MLPGEJDGMCL = struct {
+pub const SceneCastSkillMpUpdateScNotify = struct {
     retcode: u32 = 0,
     GBHFFCBGJOC: u32 = 0,
 

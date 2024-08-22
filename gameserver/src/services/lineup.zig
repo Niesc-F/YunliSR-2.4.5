@@ -51,11 +51,11 @@ pub fn onChangeLineupLeader(session: *Session, packet: *const Packet, allocator:
 }
 
 pub fn onReplaceLineup(session: *Session, packet: *const Packet, allocator: Allocator) !void {
-    const req = try packet.getProto(protocol.IPAGJPHJDBD, allocator);
+    const req = try packet.getProto(protocol.ReplaceLineupCsReq, allocator);
     var lineup = protocol.LineupInfo.init(allocator);
     lineup.HPMGGECENEM = 5;
     lineup.HGBHBGMMOKG = 5;
-    lineup.name = .{ .Const = "Squad 1" };
+    lineup.name = .{ .Const = "FeixiaoSR" };
     for (req.IPHNMDOIFON.items) |ok| {
         const avatar = protocol.LineupAvatar{
             .id = ok.id,
@@ -71,7 +71,7 @@ pub fn onReplaceLineup(session: *Session, packet: *const Packet, allocator: Allo
     rsp.lineup = lineup;
     try session.send(CmdID.CmdSyncLineupNotify, rsp);
 
-    try session.send(CmdID.CmdReplaceLineupScRsp, protocol.DLDNGOALCDB{
+    try session.send(CmdID.CmdReplaceLineupScRsp, protocol.ReplaceLineupScRsp{
         .retcode = 0,
     });
 }

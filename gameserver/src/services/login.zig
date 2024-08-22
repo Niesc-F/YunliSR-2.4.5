@@ -19,9 +19,12 @@ pub fn onPlayerLogin(session: *Session, packet: *const Packet, allocator: Alloca
 
     var basic_info = protocol.PlayerBasicInfo.init(allocator);
     basic_info.stamina = 240;
-    basic_info.level = 5;
-    basic_info.nickname = .{ .Const = "SUS" };
+    basic_info.level = 70;
+    basic_info.nickname = .{ .Const = "SUSKES" };
     basic_info.world_level = 6;
+    basic_info.mcoin = 0;
+    basic_info.hcoin = 0; //Jade
+    basic_info.scoin = 0; //Money
 
     var rsp = protocol.PlayerLoginScRsp.init(allocator);
     rsp.retcode = 0;

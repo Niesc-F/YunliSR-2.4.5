@@ -12,7 +12,10 @@ pub fn onGetCurLineupData(session: *Session, _: *const Packet, allocator: Alloca
     var lineup = protocol.LineupInfo.init(allocator);
     lineup.HPMGGECENEM = 5;
     lineup.plane_id = 5;
-    lineup.name = .{ .Const = "YunliSR" };
+    lineup.KCLNAIMOFDL = 0;
+    lineup.HPMGGECENEM = 5; //mp
+    lineup.HGBHBGMMOKG = 5; //mp_max
+    lineup.name = .{ .Const = "FeixiaoSR" };
 
     for (config.avatar_config.items, 0..) |avatarConf, idx| {
         var avatar = protocol.LineupAvatar.init(allocator);

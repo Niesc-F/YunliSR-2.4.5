@@ -33,11 +33,11 @@ pub fn onQueryGateway(_: *httpz.Request, res: *httpz.Response) !void {
     proto.retcode = 0;
     proto.port = 23301;
     proto.ip = .{ .Const = "127.0.0.1" };
-    proto.lua_version = .{ .Const = "7810120" };
+    proto.lua_version = .{ .Const = "7852981" };
     proto.ifix_version = .{ .Const = "0" };
-    proto.lua_url = .{ .Const = "https://autopatchcn.bhsr.com/lua/BetaLive/output_7810120_451ec5a5df38" };
-    proto.asset_bundle_url = .{ .Const = "https://autopatchcn.bhsr.com/asb/BetaLive/output_7809991_5b15e2d999fc" };
-    proto.ex_resource_url = .{ .Const = "https://autopatchcn.bhsr.com/design_data/BetaLive/output_7809991_c16e5db752b5" };
+    proto.lua_url = .{ .Const = "https://autopatchcn.bhsr.com/lua/BetaLive/output_7852981_757d6a2b7feb" };
+    proto.asset_bundle_url = .{ .Const = "https://autopatchcn.bhsr.com/asb/BetaLive/output_7852702_3da63958007e" };
+    proto.ex_resource_url = .{ .Const = "https://autopatchcn.bhsr.com/design_data/BetaLive/output_7857075_9f5efd1b38f2" };
     proto.HAFCIPEGPIN = true;
     proto.FKENKKHLHHD = true;
     proto.OPGMNLINAKC = true;

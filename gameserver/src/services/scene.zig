@@ -44,7 +44,7 @@ pub fn onGetCurSceneInfo(session: *Session, _: *const Packet, allocator: Allocat
 
         var prop = protocol.ScenePropInfo.init(allocator);
         prop.prop_id = 808;
-        prop.prop_state = 26;
+        prop.prop_state = 1;
 
         try scene_group.entity_list.append(.{
             .group_id = 26,

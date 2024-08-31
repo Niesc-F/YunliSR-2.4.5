@@ -20,7 +20,7 @@ pub fn onPlayerLogin(session: *Session, packet: *const Packet, allocator: Alloca
     var basic_info = protocol.PlayerBasicInfo.init(allocator);
     basic_info.stamina = 240;
     basic_info.level = 70;
-    basic_info.nickname = .{ .Const = "SUSKES" };
+    basic_info.nickname = .{ .Const = "XEON" };
     basic_info.world_level = 6;
     basic_info.mcoin = 0;
     basic_info.hcoin = 0; //Jade
